@@ -1,0 +1,20 @@
+:root {
+    --grey: #CCD2D6;
+    --purple: #9e1caf;
+}
+
+body {
+    color: var(--grey);
+    background-color: var(--purple);
+}
+
+
+nav ul {
+    text-decoration: none;
+    display: inline;
+}
+
+nav ul li {
+    padding: 10px;
+    display: inline;
+}
