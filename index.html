@@ -11,12 +11,12 @@
 </head>
 
 <body>
-<!-- div used to style header and nav together -->
+    <!-- div used to style header and nav together -->
     <div class="webpage_top">
         <header>
             <h1>Claire Alverson Portfolio</h1>
         </header>
-<!-- nav outside of header for screen reader accessibility; source: https://dev.to/masakudamatsu/don-t-nest-nav-inside-header-do-nest-the-hamburger-menu-button-inside-nav-6cp -->
+        <!-- nav outside of header for screen reader accessibility; source: https://dev.to/masakudamatsu/don-t-nest-nav-inside-header-do-nest-the-hamburger-menu-button-inside-nav-6cp -->
         <nav>
             <ul>
                 <li>About</li>
@@ -26,25 +26,26 @@
         </nav>
     </div>
 
-    <img src="https://via.placeholder.com/200" alt="Porfolio Headshot" />
+    <div class="content">
+        <img class="profile_pic" src="https://via.placeholder.com/200" alt="Porfolio Headshot" />
 
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>I am me!</p>
-        </section>
+        <main>
+            <section id="about">
+                <h2>About</h2>
+                <p>I am me!</p>
+            </section>
 
-        <section id="work">
-            <h2>Work</h2>
-            <p>Here is the work.</p>
-        </section>
+            <section id="work">
+                <h2>Work</h2>
+                <p>Here is the work.</p>
+            </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Contact info here.</p>
-        </section>
-
-    </main>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Contact info here.</p>
+            </section>
+        </main>
+    </div>
 
 </body>
 

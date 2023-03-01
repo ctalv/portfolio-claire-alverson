@@ -36,10 +36,7 @@ nav ul li {
     display: inline;
 }
 
-main {
-    display: flex;
-}
 
-#about {
-    display: block;
+.content {
+    display: flex;
 }
