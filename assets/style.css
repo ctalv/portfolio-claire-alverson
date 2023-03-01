@@ -18,3 +18,11 @@ nav ul li {
     padding: 10px;
     display: inline;
 }
+
+main {
+    display: flex;
+}
+
+#about {
+    display: block;
+}
