@@ -8,6 +8,9 @@ body {
     background-color: var(--purple);
 }
 
+div {
+    display: inline;
+}
 
 nav ul {
     text-decoration: none;
