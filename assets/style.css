@@ -8,8 +8,22 @@ body {
     background-color: var(--purple);
 }
 
-div {
-    display: inline;
+.webpage_top {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul {
