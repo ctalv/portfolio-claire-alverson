@@ -55,6 +55,10 @@ main {
     margin-right: 100px;
 }
 
+#work h2 {
+    grid-area: title;
+}
+
 .prework {
     grid-area: top;
 }
@@ -72,9 +76,10 @@ main {
     
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30% 30%;
+    grid-template-rows: 50px 30% 30%;
     
     grid-template-areas: 
+        "title title"
         "top top"
         "second third";
 }
@@ -107,7 +112,8 @@ main {
 .portfolio_repo {
     position: relative; 
     background-color: var(--grey);
-    padding: 10px;
+    padding: 3px;
+    margin: 7px;
 }
 
 
