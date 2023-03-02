@@ -4,10 +4,6 @@
     --transparent: rgba(204, 204, 204, 0.5)
 }
 
-* {
-    box-sizing: border-box;
-}
-
 .background {
     width: 100%;
     background-size: contain;
@@ -58,27 +54,52 @@ main {
     margin-top: 0px;
 }
 
-#work {
-   display:flex;
-   flex-wrap: wrap;
-}
-
-#work h2 {
-    position:relative;
-    display: block;
-}
-
 #work img {
     width: 400px;
     height: auto;
 }
 
 .prework {
-    position: relative;
-    width: 50%;
-    max-width: 300px;
+    grid-area: top;
 }
 
+.prework img {
+    width: 800px;
+}
+
+.refactor {
+    grid-area: second;
+}
+
+.portfolio_repo {
+    grid-area: third;
+}
+
+
+#work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "top top"
+        "second third";
+}
+/* 
+#work h2 {
+    position:relative;
+    display: block;
+} */
+
+
+/* 
+.prework {
+    position: relative;
+    width: 100%;
+    max-width: 300px;  
+    grid-area: 1 / 1 / 1 / 2;
+} */
+
+/* 
 .prework img {
     display: block;
     width: 100%;
@@ -89,11 +110,11 @@ main {
     position: absolute; 
     bottom: 0;
     background: var(--transparent); /* overlay */
-    width: 100%;
+    /* width: 100%;
     font-size: 20px;
     padding: 20px;
-    text-align: center;
-}
+    text-align: center; */
+
 
 #contact {
     display: flex;
