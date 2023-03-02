@@ -21,14 +21,8 @@ header {
     
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
 nav ul {
     text-decoration: none;
-    display: inline;
 }
 
 nav ul li {
@@ -52,4 +46,20 @@ main {
     flex-direction: column;
     margin: 10px;
     margin-top: 0px;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+
+#contact ul {
+    text-decoration: none;
+}
+
+#contact ul li {
+    display: inline-flex;
+    padding:inherit;
 }
