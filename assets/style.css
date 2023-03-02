@@ -1,7 +1,7 @@
 :root {
     --grey: #f6f7e5;
-    --green: #4db97a;
-    --blue: #317c65;
+    --green: #52c5ac;
+    --blue: #287253;
     --transparent: rgba(0, 0, 0, 0.5)
 }
 
@@ -13,8 +13,11 @@ body {
     color: var(--grey);
     background-color: var(--green);
     background: linear-gradient(var(--green), var(--blue));
-    /* margin-left: 2%; */
-    /* margin-right: 2%; */
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey);
 }
 
 .webpage_top {
@@ -22,21 +25,21 @@ body {
     align-items: center;
     flex-basis: auto;
     justify-content: space-between;
-}
-
-header {
-    display: flex;
+    margin-right: 20px;
     margin-left: 20px;
     
 }
 
-nav ul {
-    text-decoration: none;
+header {
+    display: flex;
+    
 }
 
 nav ul li {
     padding: 10px;
     display: inline;
+    font-size: 20px;
+    
 }
 
 .content {
