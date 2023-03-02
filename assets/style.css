@@ -1,6 +1,16 @@
 :root {
-    --grey: #CCD2D6;
+    --grey: #f6f7e5;
     --purple: #9e1caf;
+    --transparent: rgba(204, 204, 204, 0.5)
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100%;
+    background-size: contain;
 }
 
 body {
@@ -46,6 +56,43 @@ main {
     flex-direction: column;
     margin: 10px;
     margin-top: 0px;
+}
+
+#work {
+   display:flex;
+   flex-wrap: wrap;
+}
+
+#work h2 {
+    position:relative;
+    display: block;
+}
+
+#work img {
+    width: 400px;
+    height: auto;
+}
+
+.prework {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+
+.prework img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.prework h3 {
+    position: absolute; 
+    bottom: 0;
+    background: var(--transparent); /* overlay */
+    width: 100%;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 #contact {
