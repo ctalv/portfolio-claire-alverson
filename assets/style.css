@@ -52,21 +52,12 @@ main {
     flex-direction: column;
     margin: 10px;
     margin-top: 0px;
-}
-
-#work img {
-    /* width: 400px; */
-    /* height: auto; */
-    object-fit: cover;
+    margin-right: 100px;
 }
 
 .prework {
     grid-area: top;
 }
-/* 
-.prework img {
-    object-fit: cover;
-} */
 
 .refactor {
     grid-area: second;
@@ -78,26 +69,30 @@ main {
 
 
 #work {
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 30% 30%;
+    
     grid-template-areas: 
         "top top"
         "second third";
 }
-
+/* 
 #work img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
+ */
 
+/* 
 .prework img {
     width: 800px;
     height: auto;
     object-fit: cover;
 
-}
+} */
 
 /* 
 #work h2 {
@@ -106,30 +101,35 @@ main {
 } */
 
 
-/* 
-.prework {
-    position: relative;
-    width: 100%;
-    max-width: 300px;  
-    grid-area: 1 / 1 / 1 / 2;
-} */
 
-/* 
-.prework img {
-    display: block;
-    width: 100%;
-    height: auto;
+.prework,
+.refactor,
+.portfolio_repo {
+    position: relative; 
+    background-color: var(--grey);
+    padding: 10px;
 }
 
-.prework h3 {
-    position: absolute; 
-    bottom: 0;
-    background: var(--transparent); /* overlay */
-    /* width: 100%;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center; */
 
+.prework img,
+.refactor img,
+.portfolio_repo img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;   
+}
+
+
+.prework h3,
+.refactor h3,
+.portfolio_repo h3 {
+    position: absolute; 
+    background: var(--transparent); /* overlay */
+    width: 75%;
+    font-size: 20px;
+    text-align: center; 
+}
 
 #contact {
     display: flex;
