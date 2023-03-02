@@ -55,17 +55,18 @@ main {
 }
 
 #work img {
-    width: 400px;
-    height: auto;
+    /* width: 400px; */
+    /* height: auto; */
+    object-fit: cover;
 }
 
 .prework {
     grid-area: top;
 }
-
+/* 
 .prework img {
-    width: 800px;
-}
+    object-fit: cover;
+} */
 
 .refactor {
     grid-area: second;
@@ -84,6 +85,20 @@ main {
         "top top"
         "second third";
 }
+
+#work img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.prework img {
+    width: 800px;
+    height: auto;
+    object-fit: cover;
+
+}
+
 /* 
 #work h2 {
     position:relative;
