@@ -1,17 +1,20 @@
 :root {
     --grey: #f6f7e5;
-    --purple: #9e1caf;
-    --transparent: rgba(204, 204, 204, 0.5)
+    --green: #4db97a;
+    --blue: #317c65;
+    --transparent: rgba(0, 0, 0, 0.5)
 }
 
-.background {
-    width: 100%;
-    background-size: contain;
+* {
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
     color: var(--grey);
-    background-color: var(--purple);
+    background-color: var(--green);
+    background: linear-gradient(var(--green), var(--blue));
+    /* margin-left: 2%; */
+    /* margin-right: 2%; */
 }
 
 .webpage_top {
