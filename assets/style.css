@@ -142,7 +142,7 @@ main {
     padding: inherit;
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1400px) {
     .content {
         display: block;
     }
