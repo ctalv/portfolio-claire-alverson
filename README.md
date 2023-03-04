@@ -28,7 +28,9 @@ Webpage: https://ctalv.github.io/portfolio_claire_alverson/
 ## Credits
 
 HTML Boilerplate: https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/
+
 Images: (individual credit given in alt tags of photos) https://unsplash.com/ 
+
 Nav tag outside of Header tag: https://dev.to/masakudamatsu/don-t-nest-nav-inside-header-do-nest-the-hamburger-menu-button-inside-nav-6cp 
 
 ## License
