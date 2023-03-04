@@ -11,9 +11,15 @@
 
 body {
     color: var(--grey);
-    background-color: var(--green);
-    background: linear-gradient(var(--green), var(--blue));
+    background-color: var(--green); 
+    background: linear-gradient(var(--green), var(--blue)); 
+
+    /* Optional background image in the future */
+    /* background-image: url("./images/tree-background-sean-d-TKn8uxc20vQ-unsplash.jpg"); */
+    /* object-fit: cover; */
+
 }
+
 
 a {
     text-decoration: none;
