@@ -11,8 +11,8 @@
 
 body {
     color: var(--grey);
-    background-color: var(--green); 
-    background: linear-gradient(var(--green), var(--blue)); 
+    background-color: var(--green);
+    background: linear-gradient(var(--green), var(--blue));
 
     /* Optional background image in the future */
     /* background-image: url("./images/tree-background-sean-d-TKn8uxc20vQ-unsplash.jpg"); */
@@ -32,37 +32,26 @@ a {
     justify-content: space-between;
     margin-right: 20px;
     margin-left: 20px;
-    
 }
 
 header {
     display: flex;
-    
 }
 
 nav ul li {
     padding: 10px;
     display: inline;
     font-size: 20px;
-    
 }
 
 .content {
     display: flex;
-    
 }
-
-.profile_pic {
-    display: flex;
-} 
-
 
 main {
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    margin-top: 0px;
-    margin-right: 100px;
+    margin: auto;
 }
 
 #work h2 {
@@ -81,50 +70,60 @@ main {
     grid-area: third;
 }
 
+.profile_pic img {
+    display: block;
+    object-fit: cover;
+    height: 300px;
+    width: auto;
+}
+
+.profile_pic {
+    position: relative;
+    background-color: var(--grey);
+    padding: 3px;
+    margin: 7px;
+    height: fit-content;
+    width: fit-content;
+}
 
 #work {
-    
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 20% 20%;
-    
-    grid-template-areas: 
+    /* grid-template-rows: 50px 20% 20%;  */
+    grid-template-rows: min-content;
+
+    grid-template-areas:
         "title title"
         "top top"
         "second third";
 }
 
-
 .prework,
 .refactor,
-.portfolio_repo,
-.profile_pic {
-    position: relative; 
+.portfolio_repo {
+    position: relative;
     background-color: var(--grey);
     padding: 3px;
     margin: 7px;
 }
 
-
 .prework img,
 .refactor img,
-.portfolio_repo img, 
-.profile_pic {
+.portfolio_repo img {
     display: block;
     object-fit: cover;
     width: 100%;
-    height: 100%;   
+    height: 300px;
 }
-
 
 .prework h3,
 .refactor h3,
 .portfolio_repo h3 {
-    position: absolute; 
-    background: var(--transparent); /* overlay */
+    position: absolute;
+    background: var(--transparent);
     width: 75%;
     font-size: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 #contact {
@@ -140,5 +139,12 @@ main {
 
 #contact ul li {
     display: inline-flex;
-    padding:inherit;
+    padding: inherit;
+}
+
+@media screen and (max-width: 1400px) {
+    .content {
+        display: block;
+    }
+
 }
