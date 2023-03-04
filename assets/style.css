@@ -15,7 +15,7 @@ body {
     background: linear-gradient(var(--green), var(--blue));
 
     /* Optional background image in the future */
-    /* background-image: url("./images/tree-background-sean-d-TKn8uxc20vQ-unsplash.jpg"); */
+    /* background-image: url("./images/picture-title.jpg"); */
     /* object-fit: cover; */
 }
 
@@ -81,7 +81,6 @@ main {
     position: relative;
     background-color: var(--grey);
     padding: 3px;
-    margin: 7px;
     height: fit-content;
     width: fit-content;
 }
@@ -89,7 +88,6 @@ main {
 #work {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 50px 20% 20%;  */
     grid-template-rows: min-content;
 
     grid-template-areas:
@@ -130,7 +128,6 @@ main {
     display: flex;
     align-items: center;
     flex-basis: auto;
-    justify-content: space-between;
 }
 
 #contact ul {
