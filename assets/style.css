@@ -158,6 +158,21 @@ main {
     padding: inherit;
 }
 
+.phone_num {
+    display:none;
+    /* keeps phone number hovering in a larger hit box */
+    padding-top: 1%;
+}
+
+.phone_text:hover {
+    /* removes "Phone" from display */
+    display: none;
+}
+
+.phone_text:hover + .phone_num {
+    display: inline; 
+}
+
 /* once profile_pic would start to shrink, pushes it to the top to display everything block */
 @media screen and (max-width: 1400px) {
     .content {
