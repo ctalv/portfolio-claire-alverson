@@ -39,5 +39,5 @@ Images: (individual credit given in alt tags of photos) https://unsplash.com/
 
 MIT License
 
-# Module_1_Challenge
+# Module_2_Challenge
 
