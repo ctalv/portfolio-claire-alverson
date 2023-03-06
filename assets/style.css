@@ -19,23 +19,20 @@ body {
     /* object-fit: cover; */
 }
 
-
+/* any attribute including nav bar internal links and external links are formatted to look like the rest of the webpage */
 a {
     text-decoration: none;
     color: var(--grey);
 }
 
+/* container webpage_top includes the header and nav */
 .webpage_top {
     display: flex;
     align-items: center;
-    flex-basis: auto;
+    /* flex-basis: auto;  */
     justify-content: space-between;
     margin-right: 20px;
     margin-left: 20px;
-}
-
-header {
-    display: flex;
 }
 
 nav ul li {
@@ -44,16 +41,33 @@ nav ul li {
     font-size: 20px;
 }
 
+/* 2 columns containing profile_pic and main element*/
 .content {
     display: flex;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
     margin: auto;
 }
 
+.profile_pic img {
+    display: block;
+    object-fit: cover;
+    height: 300px;
+    width: auto;
+}
+
+.profile_pic {
+    position: relative;
+    background-color: var(--grey);
+    padding: 3px;
+    margin-left: auto;
+    margin-right:auto;
+    height: fit-content;
+    width: fit-content;
+}
+
+/* Adding a grid to style the work portion of webpage */
 #work h2 {
     grid-area: title;
 }
@@ -70,20 +84,25 @@ main {
     grid-area: third;
 }
 
-.profile_pic img {
-    display: block;
-    object-fit: cover;
-    height: 300px;
-    width: auto;
-}
 
-.profile_pic {
-    position: relative;
-    background-color: var(--grey);
-    padding: 3px;
-    height: fit-content;
-    width: fit-content;
-}
+/* To add in another project, follow the 6 steps. 
+
+1. Add a new container under the work id in html and add the container to CSS. 
+2. Add the corresponding grid-area title.
+
+    .example_work {
+    
+        grid-area: fourth;
+    } 
+
+3. Add another row to the grid-template-area with thegrid-area name given to the new box. 
+    - if it is a new row, have it fill the row
+    - if there is one project filling the row, modify that box to take up one column and add new box to the second column 
+
+4. 5. and 6. Add new box and its child elements to the corresponding styling
+
+*/
+
 
 #work {
     display: grid;
@@ -94,8 +113,10 @@ main {
         "title title"
         "top top"
         "second third";
+/* 3. */
 }
 
+/* 4. */
 .prework,
 .refactor,
 .portfolio_repo {
@@ -105,6 +126,7 @@ main {
     margin: 7px;
 }
 
+/* 5. */
 .prework img,
 .refactor img,
 .portfolio_repo img {
@@ -114,6 +136,7 @@ main {
     height: 300px;
 }
 
+/* 6. */
 .prework h3,
 .refactor h3,
 .portfolio_repo h3 {
@@ -130,15 +153,40 @@ main {
     flex-basis: auto;
 }
 
-#contact ul {
-    text-decoration: none;
-}
-
 #contact ul li {
     display: inline-flex;
     padding: inherit;
 }
 
+.email_add {
+    display:none;
+}
+
+.email_text:hover {
+    /* removes "Eamil" from display */
+    display: none;
+}
+
+.email_text:hover + .email_add {
+    display: inline-block; 
+}
+
+.phone_num {
+    display:none;
+    /* keeps phone number hovering in a larger hit box */
+    padding-top: 1%;
+}
+
+.phone_text:hover {
+    /* removes "Phone" from display */
+    display: none;
+}
+
+.phone_text:hover + .phone_num {
+    display: inline; 
+}
+
+/* once profile_pic would start to shrink, pushes it to the top to display everything block */
 @media screen and (max-width: 1400px) {
     .content {
         display: block;
