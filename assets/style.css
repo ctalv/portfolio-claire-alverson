@@ -41,6 +41,7 @@ nav ul li {
     font-size: 20px;
 }
 
+/* 2 columns containing profile_pic and main element*/
 .content {
     display: flex;
 }
@@ -60,10 +61,13 @@ main {
     position: relative;
     background-color: var(--grey);
     padding: 3px;
+    margin-left: auto;
+    margin-right:auto;
     height: fit-content;
     width: fit-content;
 }
 
+/* Adding a grid to style the work portion of webpage */
 #work h2 {
     grid-area: title;
 }
@@ -80,14 +84,23 @@ main {
     grid-area: third;
 }
 
-/* To add in another project, follow the 6 steps. */
 
-/* 1. Add a new container under the work id in html and add the container to CSS. 
+/* To add in another project, follow the 6 steps. 
 
-.example_work {
-    2. Add the corresponding grid-area title.
-    grid-area: fourth;
-} 
+1. Add a new container under the work id in html and add the container to CSS. 
+2. Add the corresponding grid-area title.
+
+    .example_work {
+    
+        grid-area: fourth;
+    } 
+
+3. Add another row to the grid-template-area with thegrid-area name given to the new box. 
+    - if it is a new row, have it fill the row
+    - if there is one project filling the row, modify that box to take up one column and add new box to the second column 
+
+4. 5. and 6. Add new box and its child elements to the corresponding styling
+
 */
 
 
@@ -100,13 +113,10 @@ main {
         "title title"
         "top top"
         "second third";
-/* 3. Add another row to the grid-template-area with thegrid-area name given to the new box. 
-        - if it is a new row, have it fill the row
-        - if there is one project filling the row, modify that box to take up one column and add new box to the second column 
-*/
+/* 3. */
 }
 
-/* 4. Add new box to this styling */
+/* 4. */
 .prework,
 .refactor,
 .portfolio_repo {
@@ -116,7 +126,7 @@ main {
     margin: 7px;
 }
 
-/* 5. Add new box image to this styling */
+/* 5. */
 .prework img,
 .refactor img,
 .portfolio_repo img {
@@ -126,7 +136,7 @@ main {
     height: 300px;
 }
 
-/* 6. Add new box header to this styling */
+/* 6. */
 .prework h3,
 .refactor h3,
 .portfolio_repo h3 {
@@ -143,15 +153,12 @@ main {
     flex-basis: auto;
 }
 
-#contact ul {
-    text-decoration: none;
-}
-
 #contact ul li {
     display: inline-flex;
     padding: inherit;
 }
 
+/* once profile_pic would start to shrink, pushes it to the top to display everything block */
 @media screen and (max-width: 1400px) {
     .content {
         display: block;
