@@ -158,6 +158,19 @@ main {
     padding: inherit;
 }
 
+.email_add {
+    display:none;
+}
+
+.email_text:hover {
+    /* removes "Eamil" from display */
+    display: none;
+}
+
+.email_text:hover + .email_add {
+    display: inline-block; 
+}
+
 .phone_num {
     display:none;
     /* keeps phone number hovering in a larger hit box */
