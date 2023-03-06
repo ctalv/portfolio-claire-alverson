@@ -19,23 +19,20 @@ body {
     /* object-fit: cover; */
 }
 
-
+/* any attribute including nav bar internal links and external links are formatted to look like the rest of the webpage */
 a {
     text-decoration: none;
     color: var(--grey);
 }
 
+/* container webpage_top includes the header and nav */
 .webpage_top {
     display: flex;
     align-items: center;
-    flex-basis: auto;
+    /* flex-basis: auto;  */
     justify-content: space-between;
     margin-right: 20px;
     margin-left: 20px;
-}
-
-header {
-    display: flex;
 }
 
 nav ul li {
@@ -49,9 +46,22 @@ nav ul li {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
     margin: auto;
+}
+
+.profile_pic img {
+    display: block;
+    object-fit: cover;
+    height: 300px;
+    width: auto;
+}
+
+.profile_pic {
+    position: relative;
+    background-color: var(--grey);
+    padding: 3px;
+    height: fit-content;
+    width: fit-content;
 }
 
 #work h2 {
@@ -70,20 +80,16 @@ main {
     grid-area: third;
 }
 
-.profile_pic img {
-    display: block;
-    object-fit: cover;
-    height: 300px;
-    width: auto;
-}
+/* To add in another project, follow the 6 steps. */
 
-.profile_pic {
-    position: relative;
-    background-color: var(--grey);
-    padding: 3px;
-    height: fit-content;
-    width: fit-content;
-}
+/* 1. Add a new container under the work id in html and add the container to CSS. 
+
+.example_work {
+    2. Add the corresponding grid-area title.
+    grid-area: fourth;
+} 
+*/
+
 
 #work {
     display: grid;
@@ -94,8 +100,13 @@ main {
         "title title"
         "top top"
         "second third";
+/* 3. Add another row to the grid-template-area with thegrid-area name given to the new box. 
+        - if it is a new row, have it fill the row
+        - if there is one project filling the row, modify that box to take up one column and add new box to the second column 
+*/
 }
 
+/* 4. Add new box to this styling */
 .prework,
 .refactor,
 .portfolio_repo {
@@ -105,6 +116,7 @@ main {
     margin: 7px;
 }
 
+/* 5. Add new box image to this styling */
 .prework img,
 .refactor img,
 .portfolio_repo img {
@@ -114,6 +126,7 @@ main {
     height: 300px;
 }
 
+/* 6. Add new box header to this styling */
 .prework h3,
 .refactor h3,
 .portfolio_repo h3 {
