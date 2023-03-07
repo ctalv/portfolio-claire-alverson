@@ -31,8 +31,6 @@ HTML Boilerplate: https://www.freecodecamp.org/news/basic-html5-template-boilerp
 
 Nav tag outside of Header tag: https://dev.to/masakudamatsu/don-t-nest-nav-inside-header-do-nest-the-hamburger-menu-button-inside-nav-6cp 
 
-CSS Reset File: Rice University Full-Stack Bootcamp Activities
-
 Images: (individual credit given in alt tags of photos) https://unsplash.com/ 
 
 ## License
