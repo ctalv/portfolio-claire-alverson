@@ -88,6 +88,11 @@ main {
     grid-area: fourth;
 }
 
+.project_2 {
+    
+    grid-area: fifth;
+} 
+
 
 /* To add in another project, follow the 6 steps. 
 
@@ -117,7 +122,8 @@ main {
         "title title"
         "top top"
         "second third"
-        "fourth fourth";
+        "fourth fourth"
+        "fifth fifth";
 /* 3. */
 }
 
@@ -125,7 +131,8 @@ main {
 .prework,
 .refactor,
 .portfolio_repo,
-.project_1 {
+.project_1,
+.project_2 {
     position: relative;
     background-color: var(--grey);
     padding: 3px;
@@ -136,7 +143,8 @@ main {
 .prework img,
 .refactor img,
 .portfolio_repo img,
-.project_1 img {
+.project_1 img,
+.project_2 img {
     display: block;
     object-fit: cover;
     width: 100%;
@@ -147,7 +155,8 @@ main {
 .prework h3,
 .refactor h3,
 .portfolio_repo h3,
-.project_1 h3 {
+.project_1 h3,
+.project_2 h3 {
     position: absolute;
     background: var(--transparent);
     width: 75%;
