@@ -47,8 +47,9 @@ nav ul li {
 }
 
 main {
-    margin: auto;
+    margin: 5px;
 }
+
 
 .profile_pic img {
     display: block;
