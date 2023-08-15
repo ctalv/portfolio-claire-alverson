@@ -2,6 +2,7 @@
 
 <html lang="en">
 
+
 <!-- HTML Boilerplate: https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/ -->
 
 <head>
@@ -9,59 +10,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Claire Alverson Portfolio</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
     <!-- div used to style header and nav together -->
-    <div class="webpage_top">
+
         <header>
-            <h1>Claire Alverson Portfolio</h1>
+
+
+            <!-- nav tag outside of header tag: https://dev.to/masakudamatsu/don-t-nest-nav-inside-header-do-nest-the-hamburger-menu-button-inside-nav-6cp  -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                <h1 class="navbar-brand">Claire Alverson Portfolio</h1>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
         </header>
+    
 
-        <!-- nav tag outside of header tag: https://dev.to/masakudamatsu/don-t-nest-nav-inside-header-do-nest-the-hamburger-menu-button-inside-nav-6cp  -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <div class="content container">
+        <main class="col-md-9">
+            <div class="container-fluid">
+                <div class="profile_pic">
+                    <img src="./assets/images/headshot.JPG" alt="Clare Alverson Headshot" />
+                </div>
 
-    <div class="content">
-        <div class="profile_pic">
-            <img src="./assets/images/headshot.JPG" alt="Clare Alverson Headshot" />
-        </div>
+                <div id="about">
+                    <h2>About</h2>
+                    <p> My passion has always been science. From a young age, I spent all my time outside
+                        exploring the natural world. As I grew older, I began developing an interest in
+                        video games and learning about computers. It was not until I took a college course
+                        in the MATLAB coding language that I realized coding is my thing.
 
-        <main>
-            <section id="about">
-                <h2>About</h2>
-                <p> My passion has always been science. From a young age, I spent all my time outside
-                    exploring the natural world. As I grew older, I began developing an interest in
-                    video games and learning about computers. It was not until I took a college course
-                    in the MATLAB coding language that I realized coding is my thing.
+                        I am a recent graduate from the University of Houston with a BS in Biology.
+                        In August of 2023, I completed a Full Stack Web Development course from Rice
+                        University's Glassock School of Continuing Education.
 
-                    I am a recent graduate from the University of Houston with a BS in Biology.
-                    In August of 2023, I completed a Full Stack Web Development course from Rice
-                    University's Glassock School of Continuing Education.
+                        Currently, I am looking for a role in an entry level front end or back end
+                        web development position. </p>
+                </div>
+            </div>
 
-                    Currently, I am looking for a role in an entry level front end or back end
-                    web development position. </p>
-            </section>
+            <div id="skills">
 
-            <section id="work">
+            </div>
+            <div id="work">
                 <h2>Work</h2>
+
+                <div class="project_3">
+                    <h3>Zaza Lingerie and Fragrance Ecommerce</h3>
+                    <a href="https://quiet-caverns-99335-f8f9f8c7d100.herokuapp.com/">
+                        <img src="./assets/images/project_2.JPG" alt="Zaza Lingerie and Fragrance Ecommerce" />
+                    </a>
+                </div>
+
+                <div class="project_2">
+                    <h3>The Yum Yum Blog</h3>
+                    <a href="https://yumyum-blog.herokuapp.com/">
+                        <img src="./assets/images/project_2.JPG" alt="Homepage of The Yum Yum Blog" />
+                    </a>
+                </div>
+
+                <div class="project_1">
+                    <h3>Movie Match Maker</h3>
+                    <a href="https://adamhood15.github.io/movie-match-maker/">
+                        <img src="./assets/images/project_1.JPG" alt="Homepage of Movie Match Maker webpage" />
+                    </a>
+                </div>
+
                 <div class="prework">
                     <h3>Prework</h3>
                     <a href="https://ctalv.github.io/prework-study-guide/">
@@ -86,19 +126,9 @@
                     </a>
                 </div>
 
-                <div class="project_1">
-                    <h3>Movie Match Maker</h3>
-                    <a href="https://adamhood15.github.io/movie-match-maker/">
-                        <img src="./assets/images/project_1.JPG" alt="Homepage of Movie Match Maker webpage" />
-                    </a>
-                </div>
 
-                <div class="project_2">
-                    <h3>The Yum Yum Blog</h3>
-                    <a href="https://yumyum-blog.herokuapp.com/">
-                        <img src="./assets/images/project_2.JPG" alt="Homepage of The Yum Yum Blog" />
-                    </a>
-                </div>
+
+
 
                 <!-- To add a new work to the portfolio, copy, uncomment, and fill out the following with the project information plus and image.
 
@@ -113,9 +143,10 @@
     Go to CSS to add styling.
 -->
 
-            </section>
+            </div>
 
-            <section id="contact">
+
+            <div id="contact">
                 <h2>Contact</h2>
                 <ul>
                     <li>
@@ -129,11 +160,12 @@
                     <li><a href="https://github.com/ctalv">GitHub</a></li>
                     <li><a href="https://www.linkedin.com/in/claire-alverson-a14a67205/">LinkedIn</a></li>
                 </ul>
-            </section>
+            </div>
 
         </main>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>
 
