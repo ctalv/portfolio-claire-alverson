@@ -1,35 +1,31 @@
-:root {
+/* :root {
     --grey: #f6f7e5;
     --green: #52c5ac;
     --blue: #287253;
-    --transparent: rgba(0, 0, 0, 0.5)
-}
+    --transparent: 
+} */
 
-* {
+/* * {
     font-family: 'Open Sans', sans-serif;
-}
+} */
 
-body {
+/* body {
     color: var(--grey);
     background-color: var(--green);
     background: linear-gradient(var(--green), var(--blue));
 
-    /* Optional background image in the future */
-    /* background-image: url("./images/picture-title.jpg"); */
-    /* object-fit: cover; */
-}
+} */
 
 /* any attribute including nav bar internal links and external links are formatted to look like the rest of the webpage */
-a {
+/* a {
     text-decoration: none;
     color: var(--grey);
-}
+} */
 
 /* container webpage_top includes the header and nav */
-.webpage_top {
+/* .webpage_top {
     display: flex;
     align-items: center;
-    /* flex-basis: auto;  */
     justify-content: space-between;
     margin-right: 20px;
     margin-left: 20px;
@@ -39,10 +35,10 @@ nav ul li {
     padding: 10px;
     display: inline;
     font-size: 20px;
-}
+} */
 
 /* 2 columns containing profile_pic and main element*/
-.content {
+/* .content {
     display: flex;
 }
 
@@ -66,10 +62,10 @@ main {
     margin-right:auto;
     height: fit-content;
     width: fit-content;
-}
+} */
 
 /* Adding a grid to style the work portion of webpage */
-#work h2 {
+/* #work h2 {
     grid-area: title;
 }
 
@@ -97,7 +93,7 @@ main {
 .project_3 {
     
     grid-area: sixth;
-} 
+}  */
 
 
 /* To add in another project, follow the 6 steps. 
@@ -119,7 +115,7 @@ main {
 */
 
 
-#work {
+/* #work {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content;
@@ -131,11 +127,10 @@ main {
         "fourth fourth"
         "fifth fifth"
         "sixth sixth";
-/* 3. */
-}
+} */
 
 /* 4. */
-.prework,
+/* .prework,
 .refactor,
 .portfolio_repo,
 .project_1,
@@ -145,34 +140,32 @@ main {
     background-color: var(--grey);
     padding: 3px;
     margin: 7px;
-}
+} */
 
-/* 5. */
-.prework img,
-.refactor img,
-.portfolio_repo img,
-.project_1 img,
-.project_2 img,
-.project_3 img {
+/* #work div { */
+    /* display: flex; */
+/* } */
+
+#work img {
     display: block;
     object-fit: cover;
     width: 100%;
-    height: 300px;
+    height: 450px;
 }
 
 /* 6. */
-.prework h3,
-.refactor h3,
-.portfolio_repo h3,
-.project_1 h3,
-.project_2 h3,
-.project_3 h3 {
+/* #work h3 {
     position: absolute;
-    background: var(--transparent);
-    width: 75%;
+    background: rgba(0, 0, 0, 0.5);
+    flex-grow: 1; */
+    /* width: 0; */
+    /* display: inline-block;
     font-size: 20px;
     text-align: center;
-}
+} */
+
+/* 
+
 
 #contact {
     display: flex;
@@ -187,36 +180,36 @@ main {
 
 .email_add {
     display:none;
-}
+} */
 
-.email_text:hover {
+/* .email_text:hover { */
     /* removes "Eamil" from display */
-    display: none;
-}
+    /* display: none;
+} */
 
-.email_text:hover + .email_add {
+/* .email_text:hover + .email_add {
     display: inline-block; 
 }
 
 .phone_num {
-    display:none;
+    display:none; */
     /* keeps phone number hovering in a larger hit box */
-    padding-top: 1%;
+    /* padding-top: 1%;
 }
 
 .phone_text:hover {
     /* removes "Phone" from display */
-    display: none;
+/*    display: none;
 }
 
 .phone_text:hover + .phone_num {
     display: inline; 
-}
+} */
 
 /* once profile_pic would start to shrink, pushes it to the top to display everything block */
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
     .content {
         display: block;
     }
 
-}
+} */
