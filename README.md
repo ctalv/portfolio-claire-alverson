@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a webpage to display my work, provide contact information, and provided an updated resume. https://ctalv.github.io/portfolio-claire-alverson/
+This is a webpage to display my work. https://ctalv.github.io/portfolio-claire-alverson/
 
 
 ## Credits
