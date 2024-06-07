@@ -31,11 +31,15 @@
 } */
 
 .top-image {
-    filter: blur(4px);
+    /* filter: blur(10px); */
 }
 
 .bottom-image {
-    filter: blur(4px);
+    filter: blur(40px);
+}
+
+.blur {
+    filter: blur(40px);
 }
 
 /* .top-image {
