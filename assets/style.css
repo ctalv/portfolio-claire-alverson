@@ -9,10 +9,16 @@
     font-family: 'Open Sans', sans-serif;
 } */
 
+
+main {
+    /* position: relative; */
+    
+}
+
 .first-gradient {
     color: white;
     background-image: linear-gradient(#6B95D0, #517BB8);
-    height: 900px;
+    /* height: 900px; */
     display: inline-block;
 /* #3C5427 #6B95D0 #517BB8 312F29*/
 } 
@@ -20,26 +26,36 @@
 .second-gradient {
     color: white;
     background-image: linear-gradient(#517BB8, #312F29);
-    height: 500px;
+    /* height: 500px; */
     display: inline-block;
 }
 
-/* any attribute including nav bar internal links and external links are formatted to look like the rest of the webpage */
-/* a {
-    text-decoration: none;
-    color: var(--grey);
-} */
 
-.top-image {
-    /* filter: blur(10px); */
+.image-container {
+    display: block;
+    /* overflow: hidden; */
+    /* position: relative; */
+    /* height: 100%; */
 }
 
-.bottom-image {
-    filter: blur(40px);
+.top-image, .bottom-image  {
+    /* pointer-events: none; */
+    /* display: block;
+    position: absolute;
+    object-fit: cover; */
+    width: 100%;
+    height: auto;
+    z-index: -1;
 }
+
 
 .blur {
     filter: blur(40px);
+}
+
+
+.start-content, .end-content {
+    max-height: max-content;
 }
 
 /* .top-image {
@@ -55,3 +71,12 @@
     transform: none;
     visibility: hidden;
   } */
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
+}
