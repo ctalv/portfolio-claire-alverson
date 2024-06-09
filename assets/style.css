@@ -9,27 +9,22 @@
     font-family: 'Open Sans', sans-serif;
 } */
 
-
-main {
-    /* position: relative; */
-    
+/* temporarily hidden */
+#passions {
+    display: none;
 }
 
-.first-gradient {
+.gradient {
     color: white;
-    background-image: linear-gradient(#6B95D0, #517BB8);
-    /* height: 900px; */
+    background-image: linear-gradient(#6B95D0, #312F29);
     display: inline-block;
 /* #3C5427 #6B95D0 #517BB8 312F29*/
 } 
 
-.second-gradient {
-    color: white;
-    background-image: linear-gradient(#517BB8, #312F29);
-    /* height: 500px; */
-    display: inline-block;
-}
 
+ul {
+    list-style-type: none;
+}
 
 .image-container {
     display: block;
@@ -38,7 +33,7 @@ main {
     /* height: 100%; */
 }
 
-.top-image, .bottom-image  {
+.top-image, .bottom-image, .temp-image  {
     /* pointer-events: none; */
     /* display: block;
     position: absolute;
@@ -57,6 +52,12 @@ main {
 .start-content, .end-content {
     max-height: max-content;
 }
+
+.set-image {
+    width: 400px;
+    height: 100%;
+}
+
 
 /* .top-image {
     animation: name duration timing-function delay iteration-count direction fill-mode;
