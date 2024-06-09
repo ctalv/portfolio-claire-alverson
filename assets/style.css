@@ -5,9 +5,15 @@
     --transparent: 
 } */
 
-/* * {
-    font-family: 'Open Sans', sans-serif;
-} */
+* {
+    /* font-family: 'Open Sans', sans-serif; */
+    color: white;
+}
+
+nav {
+    background-color: #A3C5F5;
+    /* A3C5F5 */
+}
 
 /* temporarily hidden */
 #passions {
@@ -15,7 +21,6 @@
 }
 
 .gradient {
-    color: white;
     background-image: linear-gradient(#6B95D0, #312F29);
     display: inline-block;
 /* #3C5427 #6B95D0 #517BB8 312F29*/
@@ -28,9 +33,6 @@ ul {
 
 .image-container {
     display: block;
-    /* overflow: hidden; */
-    /* position: relative; */
-    /* height: 100%; */
 }
 
 .top-image, .bottom-image, .temp-image  {
@@ -44,14 +46,20 @@ ul {
 }
 
 
+.start-content {
+    top: 33%;
+    left: 20%;
+    position: absolute;
+    font-weight: bold;
+    text-align:center;
+}
+
+
+
 .blur {
     filter: blur(40px);
 }
 
-
-.start-content, .end-content {
-    max-height: max-content;
-}
 
 .set-image {
     width: 400px;
@@ -78,6 +86,9 @@ body{
     display: flex;
     flex-direction: column;
 }
-footer{
+
+footer {
     margin-top: auto;
+    background-color: #312F29; 
+    color: white;
 }
