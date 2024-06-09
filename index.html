@@ -17,15 +17,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
 
     <header class="sticky-top">
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <h1 class="navbar-brand">Claire Alverson Portfolio</h1>
 
@@ -50,107 +48,115 @@
             </div>
         </nav>
     </header>
+    <main class="flex-column">
+        <div class="image-container">
+            <div class="start-content">
+                <h2 class="text-center">
+                    Welcome
+                </h2>
+            </div>
+            <img class="top-image" src="./assets/images/Houston-Skyline-Daytime-Extended-Sky.png" alt="Photo of Houston skyline daytime; Hadrian Barbosa."/>
 
-
-    <div class="container">
-        <main class="container">
-            <div class="d-lg-flex my-4" >
-                <div class="container d-block row">
-                    <img src="./assets/images/headshot.JPG" alt="Clare Alverson Headshot" />
+        </div>
+        <div class="main-content">
+            <div class="gradient">
+                <div id="about" class="d-flex">
+                    <div class="m-2">
+                        <ul class="no-style p-0">
+                            <li>
+                                My passion has always been science. From a young age, I spent all my time outside
+                                exploring the natural world. As I grew older, I began developing an interest in
+                                video games and learning about computers. It was not until I took a college course
+                                in MATLAB that I learned how much I had an affinity to programming.
+                            </li>
+                            <br>
+                            <li>
+                                I am a graduate from the University of Houston with a Bachelors of Science in Biology.
+                                In August of 2023, I completed a Full Stack Web Development certificate from Rice
+                                University.
+                            </li>
+                            <br>
+                            <li>
+                                I am currently employed as a Software Developer at Overnite Software Incorporated where 
+                                we are dedicted to developing innovated learning management software. 
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="set-image m-2" src="./assets/images/headshot.JPG" alt="Clare Alverson Headshot" />
                 </div>
-                <div class="mt-2" id="about">
-                    <h2>About</h2>
-                    <p> My passion has always been science. From a young age, I spent all my time outside
-                        exploring the natural world. As I grew older, I began developing an interest in
-                        video games and learning about computers. It was not until I took a college course
-                        in the MATLAB coding language that I realized coding is my thing.
+                <div id="passions">
+                    <div>
+                        <img/>
+                        <div>
 
-                        I am a recent graduate from the University of Houston with a BS in Biology.
-                        In August of 2023, I completed a Full Stack Web Development course from Rice
-                        University's Glassock School of Continuing Education.
+                        </div>
+                    </div>
+                    <div>
+                        <img/>
+                        <div>
 
-                        I am currently employed as a Software Developer at Overnite Software Incorporated. 
-                    </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img/>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img/>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="projects">
+                    <h2 class="m-2">Projects</h2>
+                    <div class="d-flex">
+                        <a class="" href="https://quiet-caverns-99335-f8f9f8c7d100.herokuapp.com/">
+                            <img class="set-image m-2" src="./assets/images/project_3.jpg"/>
+                        </a>
+                        <div class="text-center project">
+                            <h3>Zaza Lingerie and Fragrance</h3>
+                            <p>
+                                A lingerie and fragrance ecommerce application that utilizes the MongoDB, Express, React, and Node (MERN stack) and Stripe to facilitate a seamless user experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex py-2">
+                        <a class="" href="https://adamhood15.github.io/movie-match-maker/">
+                            <img class="set-image m-2" src="./assets/images/project_1.jpg"/>
+                        </a>
+                        <div class="text-center">
+                            <h3>Movie Match Maker</h3>
+                            <p>
+                                A front end application that will choose a movie from an API database based on genre and year range. 
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="row-gap-3 my-4" id="work">
-                <h2>Work</h2>
-
-                <div class="my-3 border border-light-subtle shadow-sm project_3">
-                    <a class="d-block row h-auto link-underline-light text-dark" href="https://quiet-caverns-99335-f8f9f8c7d100.herokuapp.com/">
-                    <h3 class="text-start m-3 my-3">Zaza Lingerie and Fragrance</h3>
-                        <img src="./assets/images/project_3.jpg" alt="Zaza Lingerie and Fragrance Ecommerce" />
-                    </a>
-                </div>
-
-                <div class="my-3 border border-light-subtle shadow-sm project_2">
-                    <a class="d-block row h-auto link-underline-light text-dark" href="https://yumyum-blog.herokuapp.com/">
-                    <h3 class="text-start m-3 my-3">The Yum Yum Blog</h3>
-                        <img src="./assets/images/project_2.JPG" alt="Homepage of The Yum Yum Blog" />
-                    </a>
-                </div>
-
-                <div class="my-3 border border-light-subtle shadow-sm project_1">
-                    <a class="d-block row h-auto link-underline-light text-dark" href="https://adamhood15.github.io/movie-match-maker/">
-                    <h3 class="text-start m-3 my-3">Movie Match Maker</h3>
-                        <img src="./assets/images/project_1.JPG" alt="Homepage of Movie Match Maker webpage" />
-                    </a>
-                </div>
-
-                <!-- replace with Weather Dashboard and Tech Blog -->
-
-                <!-- <div class="my-3 border border-light-subtle shadow-sm prework">
-                    <a class="d-block row h-auto link-underline-light text-dark" href="https://ctalv.github.io/prework-study-guide/">
-                        <h3 class="text-start m-3 my-3">Prework</h3>
-                        <img src="./assets/images/code-markus-spiske-iar-afB0QQw-unsplash.jpg"
-                            alt="Matrix movie still; Credit: Markus Spiske via Unsplash" />
-                    </a>
-                </div>
-
-                <div class="my-3 border border-light-subtle shadow-sm refactor">
-                    <a class="d-block row h-auto link-underline-light text-dark" href="https://ctalv.github.io/01_challenge_code_refactor/">
-                        <h3 class="text-start m-3 my-3">Refactor</h3>
-                        <img src="./assets/images/flowers-eugene-golovesov--nR6j_GO0eA-unsplash.jpg"
-                            alt="Painted white, oragne, and purple flowers; Credit: Eugene Golovesov via Unsplash" />
-                    </a>
-                </div> -->
-
-                <div class="my-3 border border-light-subtle shadow-sm portfolio_repo">
-                    <a class="d-block row h-auto link-underline-light text-dark" href="https://github.com/ctalv/portfolio-claire-alverson">
-                        <h3 class="text-start m-3 my-3">Portfolio Repository</h3>
-                        <img src="./assets/images/desktop-joshua-aragon-BMnhuwFYr7w-unsplash.jpg"
-                            alt="Laptop with monitors displaying code; Credit: Joshua Aragon via Unsplash" />
-                    </a>
-                </div>
-
-
+        </div>   
+        <div class="image-container">
+            <img class="bottom-image" src="./assets/images/Houston-Night.png" alt="Photo of Houston skyline nightime; Hadrian Barbosa."/>
+            <div class="end-content">
             </div>
-
-
-
-        </main>
-
-
-
-    </div>
-
-    <footer class="bg-light">
+        </div>
+    </main>
+    <footer>
         <div class="p-4" id="contact">
             <h2>Contact</h2>
             <ul class="row list-inline">
-                <li class="col-md-auto"><a class="link-underline-light text-dark" href="https://github.com/ctalv">GitHub</a></li>
-                <li class="col-md-auto"><a class="link-underline-light text-dark" href="https://www.linkedin.com/in/claire-alverson-a14a67205/">LinkedIn</a></li>
-                <!-- <li class="col-md-auto"><a class="link-underline-light text-dark" href="./assets/pdf/resume.pdf" target="_blank">Resume</a></li> -->
+                <li class="col-md-auto"><a class="link-underline-light text-light" href="https://github.com/ctalv">GitHub</a></li>
+                <li class="col-md-auto"><a class="link-underline-light text-light" href="https://www.linkedin.com/in/claire-alverson-a14a67205/">LinkedIn</a></li>
             </ul>
         </div>
     </footer>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-
+    <script src="./assets/index.js"></script>
 </body>
+
 
 </html>
