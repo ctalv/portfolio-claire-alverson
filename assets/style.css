@@ -21,14 +21,14 @@ main {
     background-color: aliceblue;
 }
 
-.skills .second {
+.skills .second, .projects .second, .connect .second {
     display: none;
-  }
+}
   
-  .skills:hover .first {
+.skills:hover .first, .projects:hover .first, .connect:hover .first {
     display: none;
-  }
+}
   
-  .skills:hover .second {
+.skills:hover .second, .projects:hover .second, .connect:hover .second {
     display: inline;
-  }
+}
