@@ -15,3 +15,20 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+.content {
+    margin: 5px;
+    background-color: aliceblue;
+}
+
+.skills .second {
+    display: none;
+  }
+  
+  .skills:hover .first {
+    display: none;
+  }
+  
+  .skills:hover .second {
+    display: inline;
+  }
